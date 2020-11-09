@@ -1,0 +1,21 @@
+.bg-game-in{
+    display: flexbox;
+    width: 25%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    opacity: .8;
+    background-color: red;
+    // border-style: ridge;
+    // border-color: black;
+    H2{
+        font-family: "Roboto";
+        color: black;
+    }
+    .btn-group{
+        display: inline-flex;
+    }
+    box-shadow: 0px 0px 6px 2px black;
+    animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);   
+}
