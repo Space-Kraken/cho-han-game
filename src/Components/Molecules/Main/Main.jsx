@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import PowerButtons from "./../../Atoms/Buttons/PowerButtons/PowerHover";
 import "./Main.scss"
-
+import {ImagesDir} from "./images.jsx";
+import SimpleButton from "./../../Atoms/Buttons/SimpleButtons/Button";
 
 export default class Main extends Component {
     constructor(props) {
@@ -19,9 +20,10 @@ export default class Main extends Component {
     }
     render() {
         return (
-            <div className={"bg-main-"+(this.state.style?"out":"in")}>
-                <h2>Cho-Han Bakuchi</h2>
-                <PowerButtons text="iniciar" action={this.changeState}/>
+            <div className={"bg-main-"+(this.state.style?"out":"in")} >        
+                <div>
+                <SimpleButton size="large" text="Iniciar" action={this.changeState}/>
+                </div>    
             </div>
         )
     }

@@ -14,4 +14,5 @@ export const ImagesDir = {
     5: IMG5,
     6: IMG6,
     IMG_BG0:IMG_BG 
+    
 }
