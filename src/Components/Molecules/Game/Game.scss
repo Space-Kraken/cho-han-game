@@ -32,10 +32,46 @@
             width: 35%;
             margin: .5rem;
             border-style: ridge;
-            border-radius: 25px;
+            border-radius: 1.8rem;
             border-color: crimson;
         }
     }
     box-shadow: 0px 0px 6px 2px black;
     animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);   
 }
+@media screen and (max-width: 1024px) {
+    .bg-game-in{
+        background-color: white;
+        display: flexbox;
+        width: 50%;
+        padding: 2rem;
+        justify-content: center;
+        align-content: center;
+        border-radius: 1.5rem;
+        opacity: .8;
+        // border-style: ridge;
+        // border-color: black;
+        H2{
+            font-family: "Roboto";
+            color: black;
+        }
+        .btn-group{
+            display: inline-flex;
+        }
+        .dice-group{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            // align-content: space-around;
+            .dice{
+                width: 35%;
+                margin: .2rem;
+                border-style: ridge;
+                border-radius: 1rem;
+                border-color: crimson;
+            }
+        }
+        box-shadow: 0px 0px 6px 2px black;
+        animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);   
+    }
+  }
