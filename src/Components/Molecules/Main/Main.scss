@@ -1,20 +1,14 @@
 @import "../../SCSS/index.scss";
 
 .bg-main-in{
-    display: flex;
-    flex-direction: column;
-    width: 39vw;
-    height: 55vh;
-    padding: 1rem;
-    justify-content: flex-end;
-    align-content: flex-end;
+    display: flexbox;
+    width: 25%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
     border-radius: 15px;
-    //opacity: .8;
-    //background-color: white;
-    background-image: url("./fondo.jpg");
-    background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+    opacity: .8;
+    background-color: white;
     // border-style: ridge;
     // border-color: black;
     H2{
@@ -24,22 +18,15 @@
     box-shadow: 0px 0px 6px 2px black;
     animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-
 .bg-main-out{
-    display: flex;
-    flex-direction: column;
-    width: 39vw;
-    height: 55vh;
-    padding:1rem;
-    justify-content: flex-end;
-    align-content: flex-end;
+    display: flexbox;
+    width: 25%;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
     border-radius: 15px;
-    //opacity: .8;
-    background-image: url("./fondo.jpg");
-    background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
-    //background-color: white;
+    opacity: .8;
+    background-color: white;
     // border-style: ridge;
     // border-color: black;
     H2{

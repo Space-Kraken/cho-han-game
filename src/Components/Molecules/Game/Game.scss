@@ -20,6 +20,11 @@
         font-family: "Roboto";
         color: black;
     }
+    Span{
+        font-family: "Roboto";
+        color: black;
+        padding-bottom: .2rem;
+    }
     .btn-group{
         display: inline-flex;
     }
@@ -32,9 +37,17 @@
             width: 35%;
             margin: .5rem;
             border-style: ridge;
-            border-radius: 1.8rem;
-            border-color: crimson;
+            border-radius: 3.8rem;
+            border-color: gray;
+            animation: coin-spin infinite 10s linear;
+            box-shadow: 0px 0px 0px 1px black;
         }
+    }
+    .group{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
     box-shadow: 0px 0px 6px 2px black;
     animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);   
@@ -75,3 +88,12 @@
         animation: fade-in 2s cubic-bezier(0.47, 0, 0.745, 0.715);   
     }
   }
+  @keyframes coin-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

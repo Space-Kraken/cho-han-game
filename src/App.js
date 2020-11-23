@@ -5,6 +5,7 @@ import Game from "./Components/Molecules/Game";
 function App() {
   const [stateGame, setstateGame] = useState(false);
   const [back, setBack] = useState("");
+  const [bet, setBet] = useState("");
   const start = () => {
     setstateGame(!stateGame);
   };
@@ -14,19 +15,29 @@ function App() {
   const setWin = () => {
     setBack("-Ganaste");
   };
+  const setNeutral = () => {
+    setBack("");
+  };
   return (
     <div className={"App" + back}>
       <header className="App-header">
         {stateGame ? (
           <Game
+            bet={bet}
             win={() => setWin()}
             lose={() => setLose()}
+            neutral={() => setNeutral()}
             action={() => start()}
           />
         ) : (
-          <Main stage={stateGame} start={() => start()} />
+          <Main
+            amount={(bet) => {
+              setBet(bet);
+            }}
+            stage={stateGame}
+            start={() => start()}
+          />
         )}
-        {/* <Main start={() => console.log("test")} /> */}
       </header>
     </div>
   );
